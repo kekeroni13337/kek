@@ -104,3 +104,20 @@ text-align:center;
 #center{
 	text-align:center;
 }
+
+#nav li {
+position: relative; /*задаємо поцицію батьківському елементу для
+позиціонування нащадків*/
+}
+/*Стилі для прихованого випадаючого меню*/
+#nav li > ul {
+position: absolute; /*задаємо поцицію нащадка*/	
+padding-right: 250px;
+display: none; /*"ховаємо" наше підменю*/
+}
+
+/*Робимо приховану частину меню видимою*/
+#nav li:hover > ul {
+display: block;
+width: 290px; /*Задаємо ширину випадаючого меню*/ 
+}
