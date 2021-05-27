@@ -122,13 +122,10 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
+transform: rotate(180deg);
   background-color: #45a049;
 }
-
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
